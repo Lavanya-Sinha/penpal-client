@@ -1,0 +1,59 @@
+.registration-container{
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    margin: 2% 33% 95% 20%;
+    width: 60%;
+    height: 85%;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+     display: flex;
+}
+.left-content{
+    width: 50%;
+    border-right: 0.5px solid lightgrey;
+    margin: 3% 0 3% 0;
+}
+.input-fields-regestration{
+    margin: 5% 3% 5% 5%;
+   padding: 20%;
+    width: 70%;
+    height: 30%;
+}
+.Input{
+    padding: 3%;
+    margin-bottom: 10%;
+    background-color: transparent;
+    border: none;
+    font-weight: 900;
+    color: #f1f1f1;
+    outline: none;
+}
+.right-content{
+    width: 50%;
+    margin-left: 5%;
+}
+.mantra{
+    margin-top: 5%;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #f1f1f1;
+}    
+.registration-btn{
+    padding: 6%;
+    width: 80%;
+    margin-top: 10%;
+    margin-left: 5%;
+    color: beige;
+    background-color: transparent;
+    border: 2px solid wheat;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+.registration-btn:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    box-shadow: 0 0 20px 5px rgba(218, 218, 218, 0.8);
+}
+

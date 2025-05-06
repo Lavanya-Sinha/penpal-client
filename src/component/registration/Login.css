@@ -1,0 +1,73 @@
+.login-container{
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    margin: 5% 33% 95% 20%;
+    width: 60%;
+    height: 75%;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+
+}
+.main{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+}
+.input-fields{
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    width: 70%;
+    height: 30%;
+}
+input{
+    padding: 2.5%;
+    margin-bottom: 5%;
+    background-color: transparent;
+    border: none;
+    font-weight: 900;
+    color: #f1f1f1;
+    outline: none;
+}
+.btn{
+    padding: 2.5%;
+    margin-top: 5%;
+    color: beige;
+    background-color: transparent;
+    border: 2px solid wheat;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+.btn:hover{
+    background-color: rgb(73, 73, 73);
+    color: white;
+    box-shadow: 0 0 20px 5px rgba(218, 218, 218, 0.8);
+}
+
+.googleBtn{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    transform: translate(0, 0);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 2px solid rgba(197, 196, 195, 0.411);
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+.googleBtn:hover{
+    background-color: rgb(216, 215, 215);
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0 20px 5px rgba(218, 218, 218, 0.8);
+}
