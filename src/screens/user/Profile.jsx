@@ -97,14 +97,19 @@ export default function Profile() {
             posts.map((post) => (
               <Card key={post.id} className="profile-post-card">
                 <h4 className="profile-post-title">{post.title}</h4>
-                <p className="profile-post-content">{post.content}</p>
+                <p
+                  className="profile-post-content"
+                  dangerouslySetInnerHTML={{ __html: post.content }}
+                />
+                <a
+                  className="profile-post-btn" href={`/story/${post.id}`}>
                 <Button
                   size="medium"
-                  className="profile-post-btn"
                   style={{ padding: "1rem", marginBottom: "1rem" }}
                 >
                   Go to post
                 </Button>
+                </a>
               </Card>
             ))}
         </div>

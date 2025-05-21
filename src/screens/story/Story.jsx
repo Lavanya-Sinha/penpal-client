@@ -228,29 +228,31 @@ export default function Story() {
             </div>
           </Card>
         )}
-        <form className="postpage-replyform" onSubmit={handleReply}>
-          <Input
-            placeholder="Write a comment..."
-            value={reply}
-            onChange={(e) => setReply(e.target.value)}
-            size="large"
-            appearance="outline"
-            required
-            className="postpage-replyinput"
-          />
-          <Button
-            type="submit"
-            appearance="primary"
-            className="postpage-replybtn"
-            onClick={handleCommentSubmission}
-            style={{
-              backgroundColor: colors.secondaryColor,
-              color: "#fff",
-            }}
-          >
-            Reply
-          </Button>
-        </form>
+        {currentUser && (
+          <form className="postpage-replyform" onSubmit={handleReply}>
+            <Input
+              placeholder="Write a comment..."
+              value={reply}
+              onChange={(e) => setReply(e.target.value)}
+              size="large"
+              appearance="outline"
+              required
+              className="postpage-replyinput"
+            />
+            <Button
+              type="submit"
+              appearance="primary"
+              className="postpage-replybtn"
+              onClick={handleCommentSubmission}
+              style={{
+                backgroundColor: colors.secondaryColor,
+                color: "#fff",
+              }}
+            >
+              Reply
+            </Button>
+          </form>
+        )}
       </div>
     </div>
   );
